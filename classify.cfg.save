@@ -1,0 +1,15 @@
+[General]
+experiment_name = Sismos
+task = classify
+
+[Input]
+train_directory = train
+test_directory = test
+featureset = [[all]]
+learners = [RandomForestClassifier, KNeighborsClassifier, SVC, LogisticRegression, MultinomialNB]
+label_col = type
+id_col = id
+
+[Output]
+results = output
+predictions = output
